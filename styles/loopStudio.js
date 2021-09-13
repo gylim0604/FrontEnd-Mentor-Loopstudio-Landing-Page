@@ -7,6 +7,11 @@ const breakpoints = createBreakpoints({
     lg: '1400px',
     xl: '2100px',
 });
+const Heading = {
+    baseStyle: {
+        textTransform: 'uppercase', // Normally, it is "semibold"
+    },
+};
 const theme = extendTheme({
     breakpoints,
     styles: {
@@ -16,6 +21,8 @@ const theme = extendTheme({
                 fontSize: '15px',
                 fontWeight: '300',
                 background: 'white',
+                boxSizing: 'border-box',
+                overflowX: 'hidden',
             },
         },
     },
@@ -26,8 +33,11 @@ const theme = extendTheme({
         veryDarkGray: 'hsl(0, 0%, 41%)',
     },
     fonts: {
-        heading: 'Alata',
-        body: 'Josefin Sans',
+        heading: 'Josefin Sans',
+        body: 'Alata',
+    },
+    components: {
+        Heading,
     },
 });
 
