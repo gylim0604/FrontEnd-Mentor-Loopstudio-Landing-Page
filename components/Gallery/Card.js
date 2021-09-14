@@ -1,7 +1,10 @@
 import { Box, Heading } from '@chakra-ui/layout';
 import React from 'react';
 
-function Card({ imgMobile, imgDesktop, title }) {
+// function Card({ imgMobile, imgDesktop, title }) {
+
+function Card(props) {
+    let { imgMobile, imgDesktop } = props;
     return (
         <Box
             position='relative'
@@ -26,8 +29,9 @@ function Card({ imgMobile, imgDesktop, title }) {
                 left='1rem'
                 fontSize='1.5rem'
                 zIndex='2'
+                textAlign='left'
             >
-                {title}
+                {props.children}
             </Heading>
         </Box>
     );

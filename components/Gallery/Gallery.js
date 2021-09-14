@@ -8,45 +8,56 @@ function Gallery() {
             <Heading>Our creations</Heading>
             <Grid gap='2rem'>
                 <Card
-                    title='Deep earth'
                     imgMobile='/images/mobile/image-deep-earth.jpg'
                     imgDesktop='/images/desktop/image-deep-earth.jpg'
-                />
+                >
+                    Deep <br /> earth
+                </Card>
                 <Card
-                    title='Night arcade'
                     imgMobile='/images/mobile/image-night-arcade.jpg'
                     imgDesktop='/images/desktop/image-night-arcade.jpg'
-                />
+                >
+                    Night <br /> arcade
+                </Card>
                 <Card
-                    title='Soccer team VR'
                     imgMobile='/images/mobile/image-soccer-team.jpg'
                     imgDesktop='/images/desktop/image-soccer-team.jpg'
-                />
+                >
+                    Soccer <br /> team VR
+                </Card>
+
                 <Card
-                    title='The grid'
                     imgMobile='/images/mobile/image-grid.jpg'
                     imgDesktop='/images/desktop/image-grid.jpg'
-                />
+                >
+                    The <br /> grid
+                </Card>
                 <Card
-                    title='From up above VR'
                     imgMobile='/images/mobile/image-from-above.jpg'
                     imgDesktop='/images/desktop/image-from-above.jpg'
-                />
+                >
+                    From up <br />
+                    above VR
+                </Card>
                 <Card
-                    title='Pocket borealis'
                     imgMobile='/images/mobile/image-pocket-borealis.jpg'
                     imgDesktop='/images/desktop/image-pocket-borealis.jpg'
-                />
+                >
+                    Pocket <br /> borealis
+                </Card>
                 <Card
-                    title='The curiosity'
                     imgMobile='/images/mobile/image-curiosity.jpg'
                     imgDesktop='/images/desktop/image-curiosity.jpg'
-                />
+                >
+                    The <br /> curiosity
+                </Card>
                 <Card
-                    title='Make it fisheye'
                     imgMobile='/images/mobile/image-fisheye.jpg'
                     imgDesktop='/images/desktop/image-fisheye.jpg'
-                />
+                >
+                    Make it <br />
+                    fisheye
+                </Card>
             </Grid>
 
             <Link
