@@ -2,7 +2,7 @@ import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
 import AboutUs from '../components/AboutUs';
 import Footer from '../components/Footer';
-import Gallery from '../components/Gallery';
+import Gallery from '../components/Gallery/Gallery';
 import Header from '../components/Header/Header';
 
 export default function Home() {
