@@ -4,9 +4,11 @@ import Card from './Card';
 
 function Gallery() {
     return (
-        <Container textAlign='center'>
-            <Heading>Our creations</Heading>
-            <Grid gap='2rem'>
+        <Container textAlign='center' py='3rem'>
+            <Heading as='h2' mb='3rem'>
+                Our creations
+            </Heading>
+            <Grid gap='1.5rem'>
                 <Card
                     imgMobile='/images/mobile/image-deep-earth.jpg'
                     imgDesktop='/images/desktop/image-deep-earth.jpg'
@@ -63,7 +65,7 @@ function Gallery() {
             <Link
                 py='.75rem'
                 px='3rem'
-                my='1rem'
+                my='2.5rem'
                 display='inline-block'
                 border='black 2px solid'
                 textTransform='uppercase'

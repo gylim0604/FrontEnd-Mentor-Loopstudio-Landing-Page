@@ -10,6 +10,12 @@ const breakpoints = createBreakpoints({
 const Heading = {
     baseStyle: {
         textTransform: 'uppercase', // Normally, it is "semibold"
+        fontWeight: '300',
+    },
+};
+const Container = {
+    baseStyle: {
+        padding: '1.25rem',
     },
 };
 const theme = extendTheme({
@@ -38,6 +44,7 @@ const theme = extendTheme({
     },
     components: {
         Heading,
+        Container,
     },
 });
 

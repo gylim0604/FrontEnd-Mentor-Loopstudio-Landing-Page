@@ -8,8 +8,8 @@ function Hero() {
                 position='absolute'
                 bottom='50%'
                 // left and right to be relative to container padding
-                left='1rem'
-                right='1rem'
+                left='1.25rem'
+                right='1.25rem'
                 // One word per line
                 d='table-caption'
                 color='white'

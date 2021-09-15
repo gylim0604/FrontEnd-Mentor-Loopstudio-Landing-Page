@@ -5,11 +5,13 @@ import React from 'react';
 
 function AboutUs() {
     return (
-        <Container d='flex' flexDir='column' textAlign='center' py='2rem'>
+        <Container d='flex' flexDir='column' textAlign='center' py='3.5rem'>
             <Img
-                my='2rem'
+                my='2.5rem'
                 src='/images/mobile/image-interactive.jpg'
                 alt='man wearing VR headset'
+                w='100%'
+                h='auto'
             />
             <Box px='1.25rem'>
                 <Heading>The leader in interactive VR</Heading>
