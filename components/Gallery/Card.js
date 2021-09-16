@@ -15,9 +15,8 @@ function Card(props) {
             color='white'
             // some magical wait to maintain aspect ration
             // 450/256 = 1/757
-            h={{ base: '120px', md: '0' }}
-            pt={{ md: '175.7%' }}
-            overflow={{ md: 'hidden' }}
+            pt={{ base: '36.69%', md: '175.7%' }}
+            overflow='hidden'
             // mask thingy
             _after={{
                 bg: 'rgba(0,0,0,.4)',

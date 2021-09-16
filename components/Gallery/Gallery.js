@@ -82,9 +82,7 @@ function Gallery() {
                 display='inline-block'
                 border='black 2px solid'
                 textTransform='uppercase'
-                fontFamily='Josefin Sans'
-                fontWeight='bold'
-                letterSpacing='2px'
+                letterSpacing='5px'
                 // desktop positioning
                 pos={{ md: 'absolute' }}
                 top={{ md: '1rem' }}

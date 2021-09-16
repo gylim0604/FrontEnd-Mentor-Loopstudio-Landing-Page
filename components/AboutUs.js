@@ -50,7 +50,7 @@ function AboutUs() {
                 <Heading
                     fontSize={{ base: '2rem', md: '2.5rem', lg: '3.5rem' }}
                     lineHeight={{ base: '2rem', md: '2.9rem', lg: '3.5rem' }}
-                    mb={{ md: '1rem', lg: '2rem' }}
+                    mb={{ base: '1rem', md: '1rem', lg: '2rem' }}
                 >
                     The leader in interactive VR
                 </Heading>
