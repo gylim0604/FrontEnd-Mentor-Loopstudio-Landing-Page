@@ -89,6 +89,11 @@ function Gallery() {
                 pos={{ md: 'absolute' }}
                 top={{ md: '1rem' }}
                 right={{ md: '1.25rem' }}
+                // Hover
+                _hover={{
+                    bg: 'black',
+                    color: 'white',
+                }}
             >
                 See all
             </Link>

@@ -12,6 +12,7 @@ import React from 'react';
 import { Close, Hamburger } from '../Icons';
 import { Modal, ModalBody, ModalContent, ModalOverlay } from '@chakra-ui/modal';
 import { useDisclosure } from '@chakra-ui/hooks';
+import NavLink from '../NavLink';
 
 function Nav() {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
@@ -72,16 +73,16 @@ function Nav() {
                 </ModalContent>
             </Modal>
             <Box d={{ base: 'none', md: 'block' }} as='span'>
-                <HStack m='0' color='white' spacing='2rem' fontWeight='400'>
-                    <Link>About</Link>
+                <HStack m='0' color='white' spacing='2rem'>
+                    <NavLink>About</NavLink>
 
-                    <Link>Careers</Link>
+                    <NavLink>Careers</NavLink>
 
-                    <Link>Events</Link>
+                    <NavLink>Events</NavLink>
 
-                    <Link>Products</Link>
+                    <NavLink>Products</NavLink>
 
-                    <Link>Support</Link>
+                    <NavLink>Support</NavLink>
                 </HStack>
             </Box>
         </Container>

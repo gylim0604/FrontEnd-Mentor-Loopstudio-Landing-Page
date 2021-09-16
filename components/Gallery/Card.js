@@ -12,6 +12,7 @@ function Card(props) {
             bgSize={{ base: '100%', md: '100%' }}
             bgPosition={{ base: 'center' }}
             bgRepeat='no-repeat'
+            color='white'
             // some magical wait to maintain aspect ration
             // 450/256 = 1/757
             h={{ base: '120px', md: '0' }}
@@ -25,10 +26,20 @@ function Card(props) {
                 inset: '0',
                 zIndex: '1',
             }}
+            _hover={{
+                cursor: 'pointer',
+                _after: {
+                    bg: 'rgba(255,255,255,.7)',
+                    content: '""',
+                    position: 'absolute',
+                    inset: '0',
+                    zIndex: '1',
+                },
+                color: 'black',
+            }}
         >
             <Heading
                 as='h3'
-                color='white'
                 position='absolute'
                 bottom={{ base: '1rem', md: '1.5rem', lg: '2.5rem' }}
                 left={{ base: '1rem', md: '1.5rem', lg: '2.5rem' }}

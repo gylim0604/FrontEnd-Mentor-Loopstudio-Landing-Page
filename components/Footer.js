@@ -9,7 +9,8 @@ import {
     Link,
 } from '@chakra-ui/layout';
 import React from 'react';
-import { Facebook, Instagram, Pintrest, Twitter } from './Icons';
+import { Facebook, Instagram, Pintrest, Twitter, Instagram2 } from './Icons';
+import NavLink from './NavLink';
 
 function Footer() {
     return (
@@ -30,7 +31,7 @@ function Footer() {
                     flexDir={{ base: 'column' }}
                     alignItems={{ base: ' center', md: 'baseline' }}
                 >
-                    <Img src='/images/logo.svg' h={{ md: '24px' }} />
+                    <Img src='/images/logo.svg' h={{ md: '29px' }} />
                     <Stack
                         py={{ base: '2rem', md: '1rem' }}
                         direction={{ base: 'column', md: 'row' }}
@@ -38,11 +39,11 @@ function Footer() {
                         spacing='1rem'
                         mx='0'
                     >
-                        <Link>About</Link>
-                        <Link>Careers</Link>
-                        <Link>Events</Link>
-                        <Link>Products</Link>
-                        <Link>Support</Link>
+                        <NavLink>About</NavLink>
+                        <NavLink>Careers</NavLink>
+                        <NavLink>Events</NavLink>
+                        <NavLink>Products</NavLink>
+                        <NavLink>Support</NavLink>
                     </Stack>
                 </Flex>
                 <Flex
