@@ -5,17 +5,18 @@ import Card from './Card';
 function Gallery() {
     return (
         <Container
-            textAlign='center'
+            textAlign={{ base: 'center', md: 'unset' }}
             py='3rem'
             maxW={{
                 md: 'container.md',
                 lg: 'container.lg',
             }}
+            pos={{ md: 'relative' }}
         >
             <Heading as='h2' mb='3rem'>
                 Our creations
             </Heading>
-            <Grid gap='1.5rem'>
+            <Grid gap='1.5rem' gridTemplateColumns={{ md: 'repeat(4,1fr)' }}>
                 <Card
                     imgMobile='/images/mobile/image-deep-earth.jpg'
                     imgDesktop='/images/desktop/image-deep-earth.jpg'
@@ -34,7 +35,6 @@ function Gallery() {
                 >
                     Soccer <br /> team VR
                 </Card>
-
                 <Card
                     imgMobile='/images/mobile/image-grid.jpg'
                     imgDesktop='/images/desktop/image-grid.jpg'
@@ -79,6 +79,10 @@ function Gallery() {
                 fontFamily='Josefin Sans'
                 fontWeight='bold'
                 letterSpacing='2px'
+                // desktop positioning
+                pos={{ md: 'absolute' }}
+                top={{ md: '0' }}
+                right={{ md: '1.25rem' }}
             >
                 See all
             </Link>

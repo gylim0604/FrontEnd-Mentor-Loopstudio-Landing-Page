@@ -51,7 +51,7 @@ const theme = extendTheme({
         container: {
             sm: '640px',
             md: '1000px',
-            lg: '1200px',
+            lg: '1400px',
             // xl: '1280px',
         },
     },

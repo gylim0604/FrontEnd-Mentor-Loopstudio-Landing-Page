@@ -8,8 +8,8 @@ function Card(props) {
     return (
         <Box
             position='relative'
-            h='120px'
-            bgImg={{ base: `url(${imgMobile})`, lg: `url(${imgDesktop})` }}
+            h={{ base: '120px', md: '390px' }}
+            bgImg={{ base: `url(${imgMobile})`, md: `url(${imgDesktop})` }}
             bgSize={{ base: '100%' }}
             bgPosition={{ base: 'center' }}
             bgRepeat='no-repeat'
