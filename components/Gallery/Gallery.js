@@ -83,14 +83,28 @@ function Gallery() {
                 border='black 2px solid'
                 textTransform='uppercase'
                 letterSpacing='5px'
+                zIndex='1'
                 // desktop positioning
                 pos={{ md: 'absolute' }}
                 top={{ md: '1rem' }}
                 right={{ md: '1.25rem' }}
-                // Hover
+                // Hover & animation shit
                 _hover={{
-                    bg: 'black',
                     color: 'white',
+                    _after: {
+                        transform: 'scaleX(1)',
+                        transformOrigin: 'left',
+                    },
+                }}
+                _after={{
+                    content: '""',
+                    position: 'absolute',
+                    inset: '0',
+                    bg: 'black',
+                    zIndex: '-1',
+                    transform: 'scaleX(0)',
+                    transformOrigin: 'right',
+                    transition: 'transform 200ms ease-in',
                 }}
             >
                 See all
