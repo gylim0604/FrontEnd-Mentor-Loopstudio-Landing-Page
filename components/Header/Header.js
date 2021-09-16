@@ -5,7 +5,12 @@ import Nav from './Nav';
 
 function Header() {
     return (
-        <Box bgImage='url("/images/mobile/image-hero.jpg")' h='100vh'>
+        <Box
+            bgImage='url("/images/mobile/image-hero.jpg")'
+            h='100vh'
+            bgRepeat='no-repeat'
+            bgSize='cover'
+        >
             <Nav />
             <Hero />
         </Box>
