@@ -6,7 +6,10 @@ import Nav from './Nav';
 function Header() {
     return (
         <Box
-            bgImage='url("/images/mobile/image-hero.jpg")'
+            bgImage={{
+                base: 'url("/images/mobile/image-hero.jpg")',
+                md: 'url("/images/desktop/image-hero.jpg")',
+            }}
             h='100vh'
             bgRepeat='no-repeat'
             bgSize='cover'

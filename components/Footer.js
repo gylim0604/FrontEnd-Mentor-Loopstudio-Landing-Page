@@ -16,6 +16,7 @@ function Footer() {
         <Box bg='black'>
             <Container
                 color='white'
+                mt={{ lg: '10rem' }}
                 py={{ base: '4rem', md: '2rem' }}
                 maxW={{
                     md: 'container.md',
@@ -32,7 +33,7 @@ function Footer() {
                     <Img src='/images/logo.svg' h={{ md: '24px' }} />
                     <Stack
                         py={{ base: '2rem', md: '1rem' }}
-                        direction={{ md: 'row' }}
+                        direction={{ base: 'column', md: 'row' }}
                         textAlign='center'
                         spacing='1rem'
                         mx='0'
@@ -48,14 +49,14 @@ function Footer() {
                     flexDir={{ base: 'column' }}
                     alignItems={{ base: ' center', md: 'end' }}
                 >
-                    <HStack py={{ base: '1rem', md: '0' }} spacing='1rem'>
+                    <HStack spacing='1rem' mt={{ base: '1.5rem', md: '0' }}>
                         <Facebook />
                         <Twitter />
                         <Pintrest />
                         <Instagram />
                     </HStack>
 
-                    <Text color='darkGray' py={{ base: '0', md: '1rem' }}>
+                    <Text color='darkGray' py={{ base: '1rem', md: '1rem' }}>
                         © 2021 Loopstudios. All rights reserved.
                     </Text>
                 </Flex>

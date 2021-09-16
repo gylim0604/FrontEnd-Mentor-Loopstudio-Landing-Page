@@ -15,7 +15,7 @@ const Heading = {
 };
 const Container = {
     baseStyle: {
-        padding: '1.25rem',
+        px: '1.25rem',
     },
 };
 
@@ -30,7 +30,7 @@ const theme = extendTheme({
             // styles for the `body`
             body: {
                 fontSize: '15px',
-                fontWeight: '300',
+                fontWeight: '400',
                 background: 'white',
                 boxSizing: 'border-box',
                 overflowX: 'hidden',

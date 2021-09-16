@@ -17,12 +17,11 @@ function Nav() {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
     return (
         <Container
-            // bg={{ md: 'black' }}
             d='flex'
             justifyContent='space-between'
             position='relative'
             zIndex='2000'
-            pt='2.5rem'
+            pt={{ base: '2.5rem', lg: '5rem' }}
             alignItems='center'
             maxW={{
                 md: 'container.md',
@@ -73,12 +72,7 @@ function Nav() {
                 </ModalContent>
             </Modal>
             <Box d={{ base: 'none', md: 'block' }} as='span'>
-                <HStack
-                    textTransform='uppercase'
-                    fontFamily='Josefin Sans'
-                    m='0'
-                    color='white'
-                >
+                <HStack m='0' color='white' spacing='2rem' fontWeight='400'>
                     <Link>About</Link>
 
                     <Link>Careers</Link>

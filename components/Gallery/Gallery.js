@@ -6,16 +6,22 @@ function Gallery() {
     return (
         <Container
             textAlign={{ base: 'center', md: 'unset' }}
-            py='3rem'
+            mt='7rem'
+            pt='3rem'
             maxW={{
                 md: 'container.md',
                 lg: 'container.lg',
             }}
             pos={{ md: 'relative' }}
         >
-            <Heading as='h2' mb='3rem'>
+            <Heading
+                as='h2'
+                mb='3rem'
+                fontSize={{ base: '2rem', md: '2.5rem', lg: '3.5rem' }}
+            >
                 Our creations
             </Heading>
+
             <Grid gap='1.5rem' gridTemplateColumns={{ md: 'repeat(4,1fr)' }}>
                 <Card
                     imgMobile='/images/mobile/image-deep-earth.jpg'
@@ -81,7 +87,7 @@ function Gallery() {
                 letterSpacing='2px'
                 // desktop positioning
                 pos={{ md: 'absolute' }}
-                top={{ md: '0' }}
+                top={{ md: '1rem' }}
                 right={{ md: '1.25rem' }}
             >
                 See all

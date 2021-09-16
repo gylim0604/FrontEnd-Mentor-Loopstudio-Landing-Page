@@ -17,15 +17,15 @@ function Hero() {
                 pos='relative'
                 top='-10%'
                 border='2px white solid'
-                w={{ base: '100%', md: '50%' }}
+                w={{ base: '100%', md: '50%', lg: '60%' }}
             >
                 <Heading
                     // One word per line
                     d='table-caption'
                     w={{ base: 'min-content', md: '100%' }}
                     color='white'
-                    p='1.5rem'
-                    fontSize={{ md: '3rem' }}
+                    p={{ base: '1.5rem', md: '2rem' }}
+                    fontSize={{ base: '2.5rem', md: '3rem', lg: '5.5rem' }}
                 >
                     Immersive experiences that deliver
                 </Heading>

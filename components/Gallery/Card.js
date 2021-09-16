@@ -8,11 +8,16 @@ function Card(props) {
     return (
         <Box
             position='relative'
-            h={{ base: '120px', md: '390px' }}
             bgImg={{ base: `url(${imgMobile})`, md: `url(${imgDesktop})` }}
-            bgSize={{ base: '100%' }}
+            bgSize={{ base: '100%', md: '100%' }}
             bgPosition={{ base: 'center' }}
             bgRepeat='no-repeat'
+            // some magical wait to maintain aspect ration
+            // 450/256 = 1/757
+            h={{ base: '120px', md: '0' }}
+            pt={{ md: '175.7%' }}
+            overflow={{ md: 'hidden' }}
+            // mask thingy
             _after={{
                 bg: 'rgba(0,0,0,.4)',
                 content: '""',
@@ -25,9 +30,9 @@ function Card(props) {
                 as='h3'
                 color='white'
                 position='absolute'
-                bottom='1rem'
-                left='1rem'
-                fontSize='1.5rem'
+                bottom={{ base: '1rem', md: '1.5rem', lg: '2.5rem' }}
+                left={{ base: '1rem', md: '1.5rem', lg: '2.5rem' }}
+                fontSize={{ base: '1.5rem', md: '1.75rem', lg: '2.5rem' }}
                 zIndex='2'
                 textAlign='left'
             >
