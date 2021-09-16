@@ -4,7 +4,14 @@ import Card from './Card';
 
 function Gallery() {
     return (
-        <Container textAlign='center' py='3rem'>
+        <Container
+            textAlign='center'
+            py='3rem'
+            maxW={{
+                md: 'container.md',
+                lg: 'container.lg',
+            }}
+        >
             <Heading as='h2' mb='3rem'>
                 Our creations
             </Heading>

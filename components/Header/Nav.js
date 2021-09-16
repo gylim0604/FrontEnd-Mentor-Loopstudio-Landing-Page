@@ -6,6 +6,7 @@ import {
     UnorderedList,
     ListItem,
     Link,
+    HStack,
 } from '@chakra-ui/react';
 import React from 'react';
 import { Close, Hamburger } from '../Icons';
@@ -16,12 +17,17 @@ function Nav() {
     const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
     return (
         <Container
+            // bg={{ md: 'black' }}
             d='flex'
             justifyContent='space-between'
             position='relative'
             zIndex='2000'
             pt='2.5rem'
             alignItems='center'
+            maxW={{
+                md: 'container.md',
+                lg: 'container.lg',
+            }}
         >
             <Img src='/images/logo.svg' h='32px' />
             <IconButton
@@ -30,6 +36,7 @@ function Nav() {
                 onClick={onToggle}
                 _hover={{}}
                 _focus={{}}
+                d={{ md: 'none' }}
             />
             <Modal isOpen={isOpen} onClose={onClose} size='full'>
                 <ModalOverlay />
@@ -65,8 +72,23 @@ function Nav() {
                     </ModalBody>
                 </ModalContent>
             </Modal>
-            <Box d={{ base: 'none', lg: 'block' }} as='span'>
-                About Careers Events Products Support
+            <Box d={{ base: 'none', md: 'block' }} as='span'>
+                <HStack
+                    textTransform='uppercase'
+                    fontFamily='Josefin Sans'
+                    m='0'
+                    color='white'
+                >
+                    <Link>About</Link>
+
+                    <Link>Careers</Link>
+
+                    <Link>Events</Link>
+
+                    <Link>Products</Link>
+
+                    <Link>Support</Link>
+                </HStack>
             </Box>
         </Container>
     );

@@ -14,7 +14,14 @@ import { Facebook, Instagram, Pintrest, Twitter } from './Icons';
 function Footer() {
     return (
         <Box bg='black'>
-            <Container color='white' py='4rem'>
+            <Container
+                color='white'
+                py='4rem'
+                maxW={{
+                    md: 'container.md',
+                    lg: 'container.lg',
+                }}
+            >
                 <Flex
                     flexDir={{ base: 'column' }}
                     alignItems={{ base: ' center' }}

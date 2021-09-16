@@ -3,7 +3,7 @@ import { createBreakpoints } from '@chakra-ui/theme-tools';
 
 const breakpoints = createBreakpoints({
     sm: '320px',
-    md: '1400px',
+    md: '1024px',
     lg: '1400px',
     xl: '2100px',
 });
@@ -18,8 +18,13 @@ const Container = {
         padding: '1.25rem',
     },
 };
+
 const theme = extendTheme({
     breakpoints,
+    components: {
+        Container,
+        Heading,
+    },
     styles: {
         global: {
             // styles for the `body`
@@ -42,9 +47,13 @@ const theme = extendTheme({
         heading: 'Josefin Sans',
         body: 'Alata',
     },
-    components: {
-        Heading,
-        Container,
+    sizes: {
+        container: {
+            sm: '640px',
+            md: '1000px',
+            lg: '1200px',
+            // xl: '1280px',
+        },
     },
 });
 

@@ -3,7 +3,16 @@ import React from 'react';
 
 function Hero() {
     return (
-        <Container d='flex' position='relative' h='100%' alignItems='center'>
+        <Container
+            d='flex'
+            position='relative'
+            h='100%'
+            alignItems='center'
+            maxW={{
+                md: 'container.md',
+                lg: 'container.lg',
+            }}
+        >
             <Box pos='relative' top='-10%' border='2px white solid' w='100%'>
                 <Heading
                     // One word per line
