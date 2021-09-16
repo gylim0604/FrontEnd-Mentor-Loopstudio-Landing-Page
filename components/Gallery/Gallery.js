@@ -85,7 +85,7 @@ function Gallery() {
                 letterSpacing='5px'
                 zIndex='1'
                 // desktop positioning
-                pos={{ md: 'absolute' }}
+                pos={{ base: 'relative', md: 'absolute' }}
                 top={{ md: '1rem' }}
                 right={{ md: '1.25rem' }}
                 // Hover & animation shit
